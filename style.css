@@ -237,6 +237,7 @@ header .fa-bars{
     .home{
         background-position: left;
     }
+    
 }
 
 @media (max-width:768px) {
@@ -263,10 +264,10 @@ header .fa-bars{
         border: .1rem solid rgba(0, 0, 0, .1);
         display: block;
     }
-    .btn{
+    /* .btn{
         margin: 1.5rem;
         padding: 1.5rem;
-    }
+    } */
     .home .content h3{
         font-size: 5rem
     }
