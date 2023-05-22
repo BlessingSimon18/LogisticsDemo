@@ -15,6 +15,12 @@
     color: #fff;
     /* background: #000; */
 }
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+    overflow-x: hidden;
+}
 section{
     padding: 2rem 9%;
 }
@@ -60,16 +66,16 @@ header .logo{
     font-weight: bolder;
 }
 .logo img{
-    width: 5.5rem;
+    width: 8rem;
 }
 header .logo span{
     color: var(--pink);
-    margin-top: -0.8rem;
-    margin-left: .7rem;
-    font-size: .8rem;
+    margin-top: -1.2rem;
+    margin-left: 1.1rem;
+    font-size: 1.1rem;
 }
 header .navbar a{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
     padding: 0 1.5rem;
     color: #666;
 }
@@ -84,7 +90,7 @@ header .navbar a:hover{
     display: inline-block;
     margin-top: 1rem;
     border-radius: .5rem;
-    font-size: 1.1rem;
+    font-size: 1.5rem;
 }
 .btn:hover,.btn-2:hover{
     transform: scale(0.9);
@@ -136,17 +142,17 @@ header .fa-bars{
     /* z-index: 1; */
 }
 .home .content h3{
-    font-size: 3rem;
+    font-size: 4.5rem;
     color: #fff;
 }
 .home .content span{
-    font-size: 2.5rem;
+    font-size: 3.8rem;
     color: var(--pink);
     padding: 1rem 0;
     line-height: 1.5;
 }
 .home .content p{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     color: #fff;
     padding: 1rem 0;
     line-height: 1.5;
@@ -161,6 +167,47 @@ header .fa-bars{
     background-image: radial-gradient(circle at 50% 50%,rgba(0,0,0,.1),rgba(0,0,0,.1));
 }
 
+#about{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+/* icons */
+.icons-container{
+    /* background: rgba(0, 0, 0, .8); */
+    background: #eee;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    position: absolute;
+    top: -5rem;
+    /* z-index: 1; */
+    border-radius: .5rem;
+}
+.icons-container .icons{
+    background: #fff;
+    border: 1rem solid rgba(0, 0, 0, .1);
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    flex: 1 1 25rem;
+}
+.icons-container .icons img{
+    height: 5rem;
+    margin-right: 2rem;
+}
+.icons-container .icons h3{
+    color: var(--pink);
+    padding-bottom: .5rem;
+    font-size: 1.5rem;
+}
+.icons-container .icons span{
+    color: #333;
+    font-size: 1.3rem;
+}
 
 
 
