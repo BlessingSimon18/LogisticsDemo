@@ -302,7 +302,7 @@ header .fa-bars{
         display: none;
     } */
     .main .social a{
-        padding-left: .3rem
+        padding-left: .3rem;
     }
 }
 @media (max-width:450px){
