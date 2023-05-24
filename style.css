@@ -170,13 +170,13 @@ header .fa-bars{
 }
 
 /* image */
-.image{
+/* .image{
     min-height: 100vh;
     background: url(./assets/fleet.jpg) no-repeat;
     background-size: cover;
     background-position: center;
     background-image: radial-gradient(circle at 50% 50%,rgba(0,0,0,.1),rgba(0,0,0,.1));
-}
+} */
 
 #about{
     display: flex;
@@ -190,36 +190,142 @@ header .fa-bars{
     background: #eee;
     display: flex;
     flex-wrap: wrap;
-    gap: 1.5rem;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    gap: 2.5rem;
+    /* padding-top: 5rem;
+    padding-bottom: 5rem; */
     position: absolute;
     top: -5rem;
-    /* z-index: 1; */
+    z-index: 1;
     border-radius: .5rem;
+    padding: 5rem 2%;
+    width: 85%;
+    /* margin-left: 19%;
+    margin-right: 19%; */
+    /* position: absolute; */
 }
 .icons-container .icons{
     background: #fff;
-    border: 1rem solid rgba(0, 0, 0, .1);
-    padding: 2rem;
+    border: rgba(0, 0, 0, .1);
+    /* padding: 0; */
+    /* row-gap: -2rem; */
     display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    flex: 1 1 25rem;
+    flex: 0 0 25.33333rem;
+    /* box-shadow: rgba(0, 0, 0, .1); */
+    /* border-radius: .5rem; */
+    /* width: 100vw; */
+    position: relative;
+    /* max-width: 33.33333rem; */
+    height: 15rem;
+    margin: 0 auto;
+    overflow: hidden;
+    line-height: 2rem;
 }
-.icons-container .icons img{
-    height: 5rem;
+
+/* .icons-container .icons img{ 
+    height: 15rem; 
+    width: 33.33333rem;
     margin-right: 2rem;
-}
+    object-fit: cover;
+} */
 .icons-container .icons h3{
     color: var(--pink);
     padding-bottom: .5rem;
+    padding-top: .7rem;
     font-size: 1.5rem;
 }
-.icons-container .icons span{
+.icons-container .icons p{
     color: #333;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
+    text-align: center;
+}
+.icons-container .icons .info1, .info2, .info3{
+    position: absolute;
+    top: 0;
+    left: -100%;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    /* background-image: url(./assets/customersupport.webp); */
+    background: rgba(0,0,0,.6);
+    padding-top: 2rem;
+    /* display: flex; */
+}
+.icons-container .icons:hover .info1{
+    left: 0;
+    transition: .5s;
+    background: url(./assets/customersupport.webp);
+    object-fit: cover;
+    background-position: right;
+}
+.icons-container .icons:hover .info2{
+    left: 0;
+    transition: .5s;
+    background: url(./assets/customersupport.webp);
+    object-fit: cover;
+    background-position: right;
+}
+.icons-container .icons:hover .info3{
+    left: 0;
+    transition: .5s;
+    background: url(./assets/customersupport.webp);
+    object-fit: cover;
+    background-position: right;
+}
+/* .icons .info::before {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0;
+    background: url(assets/customersupport.webp);
+    z-index: -1;
+    transition: .5s;
+  } */
+/* .info-img{
+    position: relative;
+    left: -100%;
+    top: -2rem;
+    z-index: 2; 
+    width: 100%; 
+    object-fit: fill;
+    height: 100%;
+    min-height: 100vh;
+    background-image: radial-gradient(circle at 50% 50%,rgba(0,0,0,.1),rgba(0,0,0,.1));
+} */
+
+.icons .info1 .cont, .info2 .cont, .info3 .cont{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    /* display: flex; */
+    /* align-items: center; */
+    height: 100%;
+    /* background: url(./assets/customersupport.webp) no-repeat;
+    background-size: cover;
+    background-position: center; */
+    background-image: radial-gradient(circle at 50% 50%,rgba(0,0,0,.6),rgba(0,0,0,.6));
+}
+.info1 .cont h3, .info3 .cont h3{
+    padding-top: 7rem;
+}
+.info2 .cont h3{
+    padding-top: 5rem;
+}
+.info1 .cont p, .info2 .cont p, .info3 .cont p{
+    color: #fff; 
 }
 
+
+/* box-icons, span-p, content-info */
+.about{
+    position: absolute;
+    top: 45rem;
+}
 
 
 
@@ -234,25 +340,45 @@ header .fa-bars{
 
 
 /* media Queries */
+/* @media (min-width: 1199px) and (max-width: 1280px){
+    .icons-container .icons{
+        max-width: 25rem;;
+      }
+} */
+
+
+
+
 @media (max-width:991px) {
     
     html{
         font-size: 55%;
     }
     header{
-        padding: 2rem;
+        padding: 2rem 3.8rem;
     }
     section{
-        padding: 2rem;
+        padding: 3.8rem;
     }
     .home{
         background-position: left;
     }
     .main{
-        padding: .4rem 4%;
+        padding: .4rem 3.8rem;
     }
-    .main .link a:nth-child(2){
+    .main .link a:nth-child(3){
         display: none;
+    }
+    .icons-container{
+        /* position: absolute; */
+        padding-left: 4%;
+        padding-right: 4%;
+        margin: 0 3.8rem;
+        width: 90%;
+    }
+    .icons-container .icons{
+       margin: 0 auto;
+       min-width: 33.33333rem;
     }
     
     
