@@ -364,7 +364,8 @@ header .fa-bars{
         background-position: left;
     }
     .home .content{
-     max-width: 100%;
+        width: 100%;
+        padding-right: 0;
     }
     .main{
         padding: .4rem 3.8rem;
